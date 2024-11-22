@@ -1,0 +1,12 @@
+{
+  "name": "philly-shows",
+  "version": "1.0.0",
+  "description": "An aggregator for shows in Philadelphia, PA",
+  "main": "index.js",
+  "repository": "git@github.com:mdquigley/philly-shows.git",
+  "author": "mdquigley <mdq204@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.9.0"
+  }
+}
