@@ -18,12 +18,17 @@ const johnnyBrendas = async () => {
         };
 
         const title = show.querySelector("a").title;
-        const date = stripFormatting(
-          show.querySelector(".singleEventDate").innerText
-        );
-        const subHeader = stripFormatting(
-          show.querySelector(".eventSubHeader").innerText
-        );
+        const date = show.querySelector("#eventDate.singleEventDate").innerText;
+        const subHeader = show.querySelector(".eventSubHeader")
+          ? show.querySelector(".eventSubHeader").innerText
+          : {};
+
+        // const date = stripFormatting(
+        //   show.querySelector(".singleEventDate").innerText
+        // );
+        // const subHeader = stripFormatting(
+        //   show.querySelector(".eventSubHeader").innerText
+        // );
         const url = show.querySelector("a").href;
         return { title, subHeader, date, url };
       });
